@@ -13,7 +13,7 @@ public:
                     continue;
                 }
                 
-                int tSum = target - (nums[i] + nums[j]);
+                long long tSum = (long long)target - ((long long)nums[i] + (long long)nums[j]);
                 int l = j + 1, h = n - 1;
                 while (l < h){
                     if (nums[l] + nums[h] == tSum){
